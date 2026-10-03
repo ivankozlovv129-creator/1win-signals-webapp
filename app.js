@@ -1,5 +1,5 @@
 // URL вашего API (получите его на Шаге 4)
-const API_URL = 'https://one-win-signals-api.onrender.com';
+const API_URL = 'https://onewin-signals-api.onrender.com';
 
 document.getElementById('get-signal-btn').addEventListener('click', async () => {
   const selectedPair = document.getElementById('pair-select').value;
