@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>1win Signals App</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Шапка с выбором языка -->
+    <header class="header">
+      <div class="logo">
+        <span class="logo-1">1</span><span class="logo-win">win</span>
+        <span class="badge">SIGNALS</span>
+      </div>
+      <div class="header-right">
+        <div class="lang-switch">
+          <button id="lang-ru" class="lang-btn active">RU</button>
+          <button id="lang-en" class="lang-btn">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+      <div class="card asset-card">
+        <label for="pair-select" id="lbl-select-pair">Торговая пара:</label>
+        <select id="pair-select" class="dropdown">
+          <option value="EUR/GBP (OTC)">EUR/GBP (OTC)</option>
+          <option value="EUR/USD (OTC)">EUR/USD (OTC)</option>
+          <option value="BTC/USDT">BTC/USDT</option>
+          <option value="ETH/USDT">ETH/USDT</option>
+        </select>
+      </div>
+
+      <div class="card signal-card">
+        <div class="signal-header">
+          <span class="pair-title" id="active-pair">EUR/GBP (OTC)</span>
+          <span class="timeframe" id="signal-time">Время: 1 мин</span>
+        </div>
+
+        <div class="probability-box">
+          <div class="prob-title" id="lbl-prob-title">Вероятность исхода</div>
+          <div class="prob-value" id="probability">89%</div>
+        </div>
+
+        <!-- Направление сигнала -->
+        <div class="direction-box" id="direction-box">
+          <span class="direction-text" id="direction">ВЫШЕ ▲</span>
+        </div>
+
+        <!-- Пояснение -->
+        <div class="analysis-reason">
+          <h4 id="lbl-reason-title">Аналитическое обоснование:</h4>
+          <p id="reason-text">Индикатор RSI находится в зоне перепроданности (28). На 1-минутном таймфрейме сформировался бычий паттерн поглощения с подтверждением объема.</p>
+        </div>
+
+        <button class="btn-get-signal" id="get-signal-btn">ПОЛУЧИТЬ СИГНАЛ</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

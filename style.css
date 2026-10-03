@@ -1,0 +1,158 @@
+:root {
+  --bg-color: #0d131c;
+  --card-bg: #161f2c;
+  --accent-blue: #0088ff;
+  --accent-green: #00c853;
+  --accent-red: #ff3d00;
+  --text-main: #ffffff;
+  --text-muted: #8a99ad;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  user-select: none;
+}
+
+.app-container {
+  padding: 16px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.logo-1 { color: #ffffff; }
+.logo-win { color: var(--accent-blue); }
+
+.badge {
+  font-size: 10px;
+  background: var(--accent-blue);
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+  font-style: normal;
+}
+
+/* Переключатель языка */
+.lang-switch {
+  display: flex;
+  background: #0d131c;
+  border-radius: 6px;
+  padding: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.lang-btn.active {
+  background: var(--accent-blue);
+  color: #fff;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.dropdown {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  background: #0d131c;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.signal-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.timeframe { color: var(--text-muted); font-size: 14px; }
+
+.probability-box {
+  text-align: center;
+  margin: 18px 0;
+}
+
+.prob-value {
+  font-size: 44px;
+  font-weight: 800;
+  color: var(--accent-blue);
+}
+
+.direction-box {
+  padding: 14px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 20px;
+  background: var(--accent-green);
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.direction-box.down {
+  background: var(--accent-red);
+}
+
+.analysis-reason {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.analysis-reason h4 {
+  margin: 0 0 6px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+.btn-get-signal {
+  width: 100%;
+  padding: 14px;
+  margin-top: 16px;
+  background: linear-gradient(90deg, #0088ff, #0055ff);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
